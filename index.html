@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Previsão do tempo em tempo real com a API Open-Meteo." />
+  <title>Clima · Previsão do Tempo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <h1 class="top__title">🌤️ Clima</h1>
+      <form class="search" id="form">
+        <input id="city" class="search__input" type="text" placeholder="Buscar cidade..." autocomplete="off" />
+        <button class="search__btn" type="submit" aria-label="Buscar">🔍</button>
+      </form>
+    </header>
+
+    <p class="status" id="status">Buscando sua localização...</p>
+
+    <main class="weather hidden" id="weather">
+      <section class="current">
+        <div class="current__main">
+          <span class="current__icon" id="curIcon">☀️</span>
+          <div>
+            <h2 class="current__city" id="curCity">—</h2>
+            <p class="current__desc" id="curDesc">—</p>
+          </div>
+        </div>
+        <div class="current__temp">
+          <span id="curTemp">--</span><span class="deg">°C</span>
+        </div>
+      </section>
+
+      <section class="metrics" id="metrics"></section>
+
+      <section class="forecast">
+        <h3 class="forecast__title">Próximos dias</h3>
+        <div class="forecast__row" id="forecast"></div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="credit">
+    Dados: <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> ·
+    por <a href="https://github.com/Samuelf27" target="_blank" rel="noopener">Samuel Ferreira</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
