@@ -15,6 +15,8 @@ App de clima com dados em tempo real, geolocalização e previsão de 5 dias —
   <a href="https://samuelf27.github.io/weather-app/"><b>🔗 Ver ao vivo</b></a>
 </p>
 
+<p align="center"><img src="https://raw.githubusercontent.com/Samuelf27/weather-app/main/preview.png" alt="Preview do projeto" width="760" /></p>
+
 ---
 
 ## 📌 Sobre o projeto
